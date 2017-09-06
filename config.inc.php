@@ -31,7 +31,8 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = $_ENV['MYSQL_HOST'];
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
-
+$cfg['Servers'][$i]['ssl'] = true;
+$cfg['Servers'][$i]['ssl_ca'] = '../rds-combined-ca-bundle.pem';
 /**
  * phpMyAdmin configuration storage settings.
  */
